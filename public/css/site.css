@@ -1,0 +1,87 @@
+/* body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+} */
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.img {
+  width: 100px;
+}
+
+
+
+
+
+.ratings {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  color: #b1b1b1;
+  overflow: hidden;
+}
+.full-stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fde16d;
+}
+.empty-stars:before, .full-stars:before {
+  content:"\2605\2605\2605\2605\2605";
+  font-size: 14pt;
+}
+.empty-stars:before {
+  -webkit-text-stroke: 1px #848484;
+}
+.full-stars:before {
+  -webkit-text-stroke: 1px orange;
+}
+/* Webkit-text-stroke is not supported on firefox or IE */
+
+/* Firefox */
+@-moz-document url-prefix() {
+  .full-stars {
+      color: #ECBE24;
+  }
+}
+
+
+.searchHotel {
+  margin-top: 10px;
+}
