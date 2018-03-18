@@ -61,14 +61,22 @@ module.exports = {
                                               
                      })
                      
+                     
                  })
     },
 
-    getSingleHotel: (req, res) => {    
-       Hotel.findById(req.params.id, (err, hotel) => {
+    getSingleHotel: (req, res) => { 
+       let reqId = req.params.id  
+       Hotel.findOne({_id: reqId}, (err, hotel) => {
+           if(err) {
+               console.log(err)
+           }
            res.render('hotels/single-hotel', {
-            hotel: hotel
+            hotel: hotel,          
            })
+           
+           
+           
        })
     }
 }

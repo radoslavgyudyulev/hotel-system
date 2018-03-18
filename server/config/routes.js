@@ -14,7 +14,7 @@ module.exports = (app) => {
   app.get('/hotels/all', controllers.hotels.allHotels)
   app.get('/hotels/add', auth.isInRole('Priority'), controllers.hotels.getHotel)
   app.post('/hotels/add', auth.isInRole('Priority'), controllers.hotels.addHotel)
-  app.get('/:id', controllers.hotels.getSingleHotel)
+  app.get('/hotels/:id', controllers.hotels.getSingleHotel)
 
 
   app.all('*', (req, res) => {
