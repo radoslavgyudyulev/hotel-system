@@ -9,5 +9,5 @@ require('./server/config/express')(app)
 require('./server/config/routes')(app)
 require('./server/config/passport')()
 
-app.listen(3000)
+app.listen(2900)
 console.log(`Server listening on port ${settings.port}...`)

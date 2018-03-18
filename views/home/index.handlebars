@@ -1,1 +1,29 @@
-<h1>Hi! {{currentUser.username}}</h1>
+<link rel="stylesheet" href="/css/home.css"> {{!--
+<div class="container"> --}}
+    <div class="row">
+        <div class="col-lg-5 search">
+            <form class="form-wrapper" action="/hotels/all" method="GET">
+                <div id="searchHotel" class="input-group add-on">
+                    <input class="form-control" placeholder="Search" name="search" type="text">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                   
+                </div>
+                 
+            </form>
+        <div class="paris">
+             <img class="parisImg" src="/image/paris.jpg" alt="">
+        </div>
+        </div>
+        <div class="col-lg-7">
+            <img class="london" src="/image/london2.jpg" alt="">
+            <img class="dubai" src="/image/dubai.jpg" alt="">
+
+        </div>
+         
+    </div>
+
+    {{!-- </div> --}}

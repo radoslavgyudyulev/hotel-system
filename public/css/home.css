@@ -1,0 +1,71 @@
+body {
+    background-color: #d1d2d3;
+    width: auto;
+    height: auto;
+}
+
+.london {
+    margin-top: 20px;
+    display:inline-block;
+    position:relative;
+    border:1px solid #dee0e2;
+    padding:5px;
+    background:#dee0e2;
+    margin-bottom:15px;
+    width: 550px;
+    height: 280px;
+    margin-left: 100px;
+    opacity: 0.8;
+    
+}
+
+.dubai {
+    opacity: 0.8;
+    margin-top: 20px;
+    display:inline-block;
+    position:relative;
+    border:1px solid #dee0e2;
+    padding:5px;
+    background:#dee0e2;
+    margin-bottom: 15px;
+    width: 550px;
+    height: 280px;
+    margin-left: 100px;
+}
+.form-wrapper {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.search {
+    
+    height: 300px;
+    
+    
+}
+.paris {
+    margin-top: 256px;
+    margin-left: 30px;
+}
+.parisImg {
+    opacity: 0.7;
+    margin-top: 20px;
+    display:inline-block;
+    position:relative;
+    border:1px solid #dee0e2;
+    padding:5px;
+    background:#dee0e2;
+    margin-bottom: 15px;
+    width: 550px;
+    height: 280px;
+}
+
+.dubai:hover {
+    opacity: 1;
+}
+.parisImg:hover {
+    opacity: 1;
+}
+.london:hover {
+    opacity: 1;
+}
