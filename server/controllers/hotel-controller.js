@@ -5,12 +5,7 @@ const User = require('../data/User')
 module.exports = {
    
     getHotel: (req, res) => {
-        
-        let priority = req.users.roles['Priority']
-
-         res.render('hotels/add-hotel', {
-            priority: priority
-        })
+         res.render('hotels/add-hotel')
         
     },
     addHotel: (req, res) => {
@@ -68,4 +63,13 @@ module.exports = {
                      
                  })
     },
+
+    getSingleHotel: (req, res) => {
+       Hotel.findById(req.params.id, (err, hotel) => {
+           res.render('hotels/single-hotel', {
+            hotel: hotel
+           })
+       })
+    }
 }
+
