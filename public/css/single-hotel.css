@@ -1,0 +1,21 @@
+.single-page-image {
+    margin-top: 50px;
+    margin-left: 200px;
+    
+  }
+  .singleHotelImage {
+    width: 450px;
+    height: 450px;
+  }
+  .hotelName {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .hotelDescription {
+    margin-left: 50px;
+    color: blanchedalmond;
+  }
+  .ratings {
+    margin-bottom: 10px;
+    
+  }

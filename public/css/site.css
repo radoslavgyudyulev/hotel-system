@@ -43,6 +43,10 @@
   width: 100px;
 }
 
+.descriptionMain {
+  color: blanchedalmond;
+}
+
 
 
 
@@ -84,10 +88,6 @@
 
 .searchHotel {
   margin-top: 10px;
-}
-
-.center {
-
 }
 
 
@@ -159,3 +159,4 @@ body {
 .hotelSearchPic:hover {
   opacity: 1;
 }
+

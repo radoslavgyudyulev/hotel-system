@@ -1,14 +1,17 @@
+<link href="/css/single-hotel.css" type="text/css" rel="stylesheet" />
 <div class="container">
     <div class="row">
-        <div class="col-lg-3">
+        <div class="single-page-image">
+            <img class="singleHotelImage" src="{{hotel.image}}" alt="{{hotel.image}}">
+        </div>
+        <div class="col-lg-5">
+            <h2 class="hotelName">{{hotel.hotelName}}</h2>
+            <div class="ratings">
+                <div class="empty-stars"></div>
+                <div class="full-stars" style="width:{{hotel.stars}}"></div>
+            </div>
+            <p class="hotelDescription">{{hotel.description}}</p>
+        </div>
 
-        </div>
-        <div class="col-lg-9">
-            <img src="{{hotel.image}}" alt="">
-        </div>
     </div>
 </div>
-
-
-
-
