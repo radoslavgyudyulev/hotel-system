@@ -52,7 +52,7 @@ body {
     margin-top: 20px;
     display:inline-block;
     position:relative;
-    border:1px solid #dee0e2;
+    /* border:1px solid #dee0e2; */
     padding:5px;
     background:#dee0e2;
     margin-bottom: 15px;
