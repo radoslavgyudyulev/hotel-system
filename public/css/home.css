@@ -1,8 +1,4 @@
-body {
-    background-color: #d1d2d3;
-    width: auto;
-    height: auto;
-}
+
 
 .london {
     margin-top: 20px;
@@ -69,3 +65,18 @@ body {
 .london:hover {
     opacity: 1;
 }
+
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: arial;
+  }
+  
+  body {
+    background-color: #555;
+    text-align: center;
+    font-family: arial;
+  }
+  

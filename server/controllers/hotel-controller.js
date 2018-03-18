@@ -1,15 +1,22 @@
 const Hotel = require('../data/Hotel')
 const errorHandler = require('../utilities/error-handler')
+const User = require('../data/User')
 
 module.exports = {
    
     getHotel: (req, res) => {
-        res.render('hotels/add-hotel')
+        
+        let priority = req.users.roles['Priority']
+
+         res.render('hotels/add-hotel', {
+            priority: priority
+        })
+        
     },
     addHotel: (req, res) => {
         let reqBody = req.body
         let userId = req.user._id
-
+        
         
 
         Hotel
@@ -31,9 +38,10 @@ module.exports = {
             })
     },
     allHotels: (req, res) => {
-       let pageSize = 3
+       let pageSize = 4
        let page = parseInt(req.query.page) || 1
        let search = req.query.search
+       
        
         
       
