@@ -1,5 +1,6 @@
 
 <body class="app-layout">
+    <link rel="stylesheet" href="/css/admin-page.css">
   
   <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">MyStyle</a>
@@ -56,10 +57,37 @@
             </div>
       </main>
     </div>
-  </div>
- {{#each users}}
+    </div>
+  
+ {{!-- {{#each users}}
     <h1>{{this.username}}</h1>
  {{/each}}
- <h1>{{this.username}}</h1>
+ <h1>{{this.username}}</h1> --}}
  
+ <div class="container">
+     <div class="row">
+<table class="table table-hover col-lg-10 usersTable">
+  <thead>
+ <tbody>
+      {{#each users}}
+    <tr class="table-active">
+       
+      <th scope="row">Username:  {{this.username}}</th>
+      <td>First Name:  {{this.firstName}}</td>
+      <td>Last Name:  {{this.firstName}}</td>
+     {{#if roles}}
+      <td>Priority:  [ {{this.roles}} ] </td>
+      {{else}}
+      <td>Priority:  [ none ] </td>
+
+     {{/if}}
+      {{/each}}
+    </tr>
+    </tbody>
+ </thead>
+ </table>
+ </div>
+</div>
+
+
 </body>

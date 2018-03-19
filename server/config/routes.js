@@ -16,6 +16,11 @@ module.exports = (app) => {
   app.post('/hotels/add', auth.isInRole('Priority'), controllers.hotels.addHotel)
   app.get('/hotels/:id', controllers.hotels.getSingleHotel)
 
+ 
+  app.get('/profile',  controllers.users.getProfilePage)
+  app.get('/profile/users', controllers.users.getAllUsers)
+  
+
 
   app.all('*', (req, res) => {
     res.status(404)

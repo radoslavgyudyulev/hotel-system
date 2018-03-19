@@ -1,5 +1,6 @@
 const encryption = require('../utilities/encryption')
 const User = require('mongoose').model('User')
+const mongoose = require('mongoose')
 
 
 module.exports = {
@@ -64,5 +65,19 @@ module.exports = {
     res.redirect('/')
   },
 
- 
+  getProfilePage: (req, res) => {
+    res.render('users/profile')
+  },
+
+  getAllUsers: (req, res) => {
+    let query = User.find({})
+
+    query
+      .then(users => {
+        res.render('users/admin-page/admin-page', {
+          users: users
+        });
+      })
+  
+  }
 }
